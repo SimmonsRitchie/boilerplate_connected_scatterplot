@@ -26,10 +26,10 @@ export const loadAndProcessData = () =>
     csv("static/dummy4.csv"),
   ]).then(([dummy1, dummy2, dummy3, dummy4]) => {
 
-    // DATA GROUPS: SET META DATA
-    // Each data group represents all X and Y values being displayed on the graph at a single time.
-    // Below we define an object with metadata and processing info for each group. We create this so we only have to adjust things
-    // here when we load in different data.
+      /* ----------------- DATA GROUP PARSER ---------------------
+    Below we create objects for each data file that includes instructions 
+    on how they should be parsed and formatted.*/
+    
     const xValParser = d => moment(d, 'YYYY') // In this case, we're using the same xAxisParser for multiple groups, so we just define it here. For other cases, you may need to create a new parser for each group.
     const yValParser = d => +d // just applying uniary operator to yVals to convert them to int
     const yValDisplayFormatPercent = d => `${d}%`
