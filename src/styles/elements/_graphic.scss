@@ -1,0 +1,76 @@
+// SVG
+// Styles for our canvas. You can change background color here.
+.graphic__svg {
+  // background: rgba(green, 0.33);
+  display: block; // svgs are 'inline block' by default and have a small amount of space under them for the tails of text chars like 'y', 'g', etc.
+}
+
+// X AXIS GROUP
+// Controls ticks, text, axis line
+.axisX {
+  color: $text-main; 
+
+  // text next to ticks
+  text {
+      font-size: $font-size-small;
+  }
+}
+
+// Y AXIS GROUP
+// Controls ticks and text
+.axisY {
+  color: $text-main; 
+
+  // horizontal gridlines
+  .tick line {
+    stroke: $line-grey-accent;
+    shape-rendering: crispEdges;
+  }
+
+  // text next to ticks
+  text {
+    font-size: $font-size-small;
+  }
+}
+
+// LINES
+// Colors and props of lines
+.line {
+  fill: none;
+  // stroke: $orange;
+  stroke-width: 3;
+  stroke-linejoin: round; // makes lines smoother
+}
+
+// DOTS
+// Styles for our scatter plot dots
+.dot {
+  r: 4;
+  stroke-width:0.8;
+  stroke: white;
+
+  @media (min-width: $pennlive-desktop) {
+    r: 5;
+    stroke-width:1.3;
+
+  }
+}
+
+// Y AXIS LABEL
+// Styles the big label next to Y axis
+.yAxis-label {
+  font-size: $font-size-x-small;
+  fill: $text-main;
+
+  @media (min-width: $mid-breakpoint) {
+    font-size: $font-size-small;
+  }
+}
+
+// Y AXIS LABEL
+// Styles the big label next to Y axis
+.xAxis-label {
+  font-size: $font-size-small;
+  fill: $text-main;
+}
+

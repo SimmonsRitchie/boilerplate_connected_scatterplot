@@ -1,0 +1,11 @@
+// LINK STYLE FOR GRAPHIC
+
+a {
+  color: $pennlive-link;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: none;
+    color: $pennlive-link-hover;
+  }
+}

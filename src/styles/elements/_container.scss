@@ -1,0 +1,50 @@
+// CONTAINER DIVS
+// Change the CSS here to alter padding, etc.
+
+// OUTER CONTAINER
+// contains all content
+.container__outer {
+  max-width: 650px;
+  margin: 0 auto;
+  // background: rgba(yellow, 0.33);
+}
+
+// HEADER CONTAINER
+.container__header {
+  padding: $s-size $xs-size $s-size $xs-size;
+  
+  @media (min-width: $mid-breakpoint) {
+    padding: $s-size $s-size $s-size $s-size;
+  }
+}
+
+// CONTAINER DROPDOWN
+.container__dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: $s-size;
+}
+
+// CONTAINER LEGEND
+.container__legend {
+  display: flex;
+  justify-content: flex-end;
+  // justify-content: space-evenly;
+  padding: 0 $s-size 0 $s-size;
+  // align-items: center;
+}
+
+// CONTAINER GRAPHIC
+.container__graphic {
+  padding-bottom: $s-size;
+}
+
+// FOOTNOTE CONTAINER
+.container__footnote {
+  padding: 0 $xs-size $xs-size 0;
+
+  @media (min-width: $mid-breakpoint) {
+    padding: 0 $s-size $s-size $s-size;
+  }
+}

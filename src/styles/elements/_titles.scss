@@ -1,0 +1,30 @@
+// HEADINGS OF GRAPHIC
+
+.titles__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: $s-size;
+  color: $text-main;
+  font-weight: 300; // aka 'demi bold'
+  font-size: $font-size-large;
+}
+
+.titles__subtitle {
+  padding: 0;
+  margin: 0 0 0 0;
+  font-style: italic;
+  font-family: $georgia;
+  color: $text-light;
+  font-size: $font-size-small;
+  text-align: center;
+}
+
+.titles__footnote {
+  margin: 0.3rem;
+  font-family: $georgia;
+  color: $text-light;
+  font-style: italic;
+  font-size: $font-size-x-small;
+  padding-bottom: 0.2em;
+}

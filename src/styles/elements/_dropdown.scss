@@ -1,0 +1,13 @@
+.dropdown {
+  margin: 1.2rem 0 1.2rem $s-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-small;
+  color: $text-main;
+}
+
+.dropdown__label {
+  color: $text-main;
+  font-size: $font-size-small;
+}

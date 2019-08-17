@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 
+This graphic was coded and designed by Daniel Simmons-Ritchie for the Patriot-News/PennLive.com 
+Contact him at: simmons-ritchie@pennlive.com
+-->
+<html>
+  <head>
+    <meta charset="UTF8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Head: Title of graphic</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./dist/styles.css" />
+  </head>
+
+  <body>
+    <div class="container__outer">
+      <div class="container__header">
+        <h3 class="titles__title">
+          Title of graphic
+        </h3>
+        <p class="titles__subtitle">
+          Subtitle of graphic. This is a bit of information about the graphic.
+        </p>
+      </div>
+      <div class="container__dropdown">
+        <span class="dropdown__label">DATA:</span>
+        <select id="dropdown" class="dropdown"></select>
+      </div>
+      <div class="container__graphic">
+        <div class="container__legend">
+        </div>
+        <div class="graphic__inner">
+          <svg class="graphic__svg"></svg>
+        </div>
+      </div>
+      <div class="container__footnote">
+        <p class="titles__footnote"><b>Source:</b> Source of Data</p>
+        <p class="titles__footnote"><b>Note:</b> If necessary, include a footnote here.</p>
+        <p class="titles__footnote">Graphic by Daniel Simmons-Ritchie, PennLive.com</p>
+      </div>
+      <!-- Your D3 code for ny maps -->
+      <script
+        type="text/javascript"
+        src="https://pym.nprapps.org/pym.v1.min.js"
+      ></script>
+      <script src="./dist/bundle.js"></script>
+      <script>
+        var pymChild = new pym.Child();
+      </script>
+    </div>
+  </body>
+</html>

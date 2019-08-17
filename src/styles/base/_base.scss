@@ -1,0 +1,59 @@
+// // Lato, good all purpose font
+// @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+// Libre, similar to itc-franklin-gothic std
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600');
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+  background: white;
+  overflow: hidden; // Added to stop horizontal scroll bar appearing when viewport shrinks
+  // font-family: 'Lato', Helvetica, Arial, sans-serif;
+  // font-family: 'Benton Sans', Arial, sans-serif; // PennLive fonts
+  font-family: "ITC Franklin Gothic Std", Arial, sans-serif; // Sunlight foundation
+  // font-family: "Libre", Arial, sans-serif; // Similar to Sunlight foundation, using google font
+}
+
+// // PennLive article text styles
+// p {
+//   font-size: 1.55rem; // PennLive article font size
+//   line-height: 1.6; // PennLive article line height
+//   letter-spacing: .013em;
+//   margin-bottom: 16px;
+// }
+
+// // PennLive headline styles
+// h1 {
+//     margin-bottom: 10px;
+//     font-size: 2.3rem;
+//     color: #222;
+//     line-height: 1.25;
+//     letter-spacing: -.01em;
+// }
+
+button {
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
