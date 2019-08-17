@@ -19,14 +19,11 @@ import { scaleLinear, scaleBand, scaleTime, scaleOrdinal } from "d3-scale";
 import { axisBottom, axisLeft } from "d3-axis";
 import { transition } from "d3-transition";
 import { line, curveBasis } from 'd3-shape';
-import {timeFormat} from 'd3-time-format';
 import { schemeSet2} from 'd3-scale-chromatic';
-import moment from 'moment';
 
 // My imports
 import { filterData } from "./filter";
-import {getDropdownVal} from "./dropdownSelector";
-import { bisectTooltip} from "./bisectTooltip";
+
 import { tooltipOn, tooltipOff } from "./tooltip";
 import { flattenValuesIntoArray } from './parse';
 import { relaxSpacing } from './relaxSpacing'
@@ -48,10 +45,6 @@ export const drawChart = (rawData, props, animatedUpdate=false) => {
     yValDisplayFormat,
     xAxisTickFormat
   } = selectedData
-
-  // const yAxisLabel = selectedData.yAxisLabel // the label along our Y axis
-  // const xAxisLabel = selectedData.xAxisLabel // the label along our X axis
-  // const measurementUnit = selectedData.unit // the measurement unit for Y axis values
 
   // DESTRUCTURE PROPS
   const {
