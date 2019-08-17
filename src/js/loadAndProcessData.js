@@ -8,11 +8,11 @@ This module gets out data and parses it if necesary
 // --------------------------- IMPORTS ---------------------------
 
 // Third party
-import { csv, json, tsv } from "d3-fetch"; // I'm using d3-fetch instead of d3-request because this tutorial is using V5 API
+import { csv } from "d3-fetch"; // I'm using d3-fetch instead of d3-request because this tutorial is using V5 API
 
 
 // My imports
-import {formatData, multipleColumnsToSeries} from './parse'
+import { multipleColumnsToSeries} from './parse'
 import moment from "moment";
 import {timeFormat} from 'd3-time-format';
 
@@ -29,7 +29,7 @@ export const loadAndProcessData = () =>
       /* ----------------- DATA GROUP PARSER ---------------------
     Below we create objects for each data file that includes instructions 
     on how they should be parsed and formatted.*/
-    
+
     const xValParser = d => moment(d, 'YYYY') // In this case, we're using the same xAxisParser for multiple groups, so we just define it here. For other cases, you may need to create a new parser for each group.
     const yValParser = d => +d // just applying uniary operator to yVals to convert them to int
     const yValDisplayFormatPercent = d => `${d}%`
