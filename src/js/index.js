@@ -60,7 +60,7 @@ loadAndProcessData().then(rawData => {
 
   // --------------------------- RESIZE ---------------------------
 
-  // TODO: This function is probably unecessary, it can be deleted if you can figure out how to pass args into a func that's being debounced
+  // This function is probably unecessary, it can be deleted if you can figure out how to pass args into a func that's being debounced
   function resize() {
     drawChart(rawData, props)
   }
